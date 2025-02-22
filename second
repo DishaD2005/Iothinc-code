@@ -1,0 +1,18 @@
+import emoji as e
+dict={
+    "Heart":e.emojize(":red_heart:"),
+    "pizza":e.emojize(":pizza:"),
+    "cats":e.emojize(":cat:"),
+    "dogs":e.emojize(":dog:"),
+    "sun":e.emojize(":sun:")
+    }
+n=input("Enter")
+list1=n.split()
+l=""
+for i in list1:
+    if i in dict:
+        l=l+dict[i]+" "
+    else:
+        l=l+i+" "
+ 
+print(l)
